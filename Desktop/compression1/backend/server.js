@@ -10,7 +10,7 @@ const upload = multer({ dest: "backend/uploads/" });
 const cors = require("cors");
 
 app.use(cors({
-    origin: "http://compression.vercel.app",  // ✅ Allow requests from frontend
+    origin: "http://compression1.vercel.app",  // ✅ Allow requests from frontend
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
 }));
