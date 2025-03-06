@@ -8,11 +8,7 @@ const sharp = require("sharp");
 const app = express();
 
 // ✅ Allow CORS for your frontend
-app.use(cors({
-    origin: "https://compression1.vercel.app", // Replace with your actual frontend URL
-    methods: "GET,POST",
-    allowedHeaders: "Content-Type"
-}));
+app.use(cors());
 
 // ✅ Ensure 'uploads' folder exists
 const uploadDir = path.join(__dirname, "uploads");
