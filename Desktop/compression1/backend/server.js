@@ -4,7 +4,7 @@ const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 const sharp = require("sharp");
-const ssim = require("image-ssim");
+const { ssim } = require("image-ssim");
 
 const app = express();
 
